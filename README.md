@@ -4,13 +4,13 @@ Este repositório reúne notebooks em Python que exploram técnicas de detecçã
 
 ## Conteúdo
 - `Isolation_Forest_and_LOF.ipynb`: demonstra Isolation Forest e Local Outlier Factor (LOF) para identificar pontos fora do padrão, incluindo visualização de scores e comparação direta entre os algoritmos.
-- `fraud_detection_anomaly.ipynb`: variação do experimento com foco em normalização dos dados, ajustes de hiperparâmetros e avaliação dos efeitos dessas mudanças nos resultados.
+- `fraud_detection_anomaly.ipynb`: versão estendida com normalização dos dados, ajustes de hiperparâmetros e um autoencoder implementado em TensorFlow/Keras para detecção de anomalias.
 
 ## Pré-requisitos
 - Python 3.9–3.12 com acesso ao Jupyter (via `jupyter notebook` ou VS Code com a extensão Jupyter instalada). Essa faixa garante compatibilidade com as versões sugeridas das bibliotecas abaixo.
-- Bibliotecas comuns de ciência de dados (numpy, pandas, scikit-learn, matplotlib, seaborn). Caso precise instalar, use versões mínimas sugeridas:
+- Bibliotecas comuns de ciência de dados (numpy, pandas, scikit-learn, matplotlib, seaborn) e TensorFlow/Keras para o autoencoder. Caso precise instalar, use versões mínimas sugeridas:
   ```bash
-  pip install -U "numpy>=1.24" "pandas>=1.5" "scikit-learn>=1.3" "matplotlib>=3.7" "seaborn>=0.12" "jupyter>=1.0"
+  pip install -U "numpy>=1.24" "pandas>=1.5" "scikit-learn>=1.3" "matplotlib>=3.7" "seaborn>=0.12" "tensorflow>=2.11" "jupyter>=1.0"
   ```
   Recomenda-se criar e ativar um ambiente virtual (`python -m venv .venv && source .venv/bin/activate`) e, se quiser registrar as dependências, salvar essas versões em um `requirements.txt`.
 - Conjunto de dados: [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) em formato CSV.
@@ -26,7 +26,7 @@ Este repositório reúne notebooks em Python que exploram técnicas de detecçã
 5. Execute as células em ordem. As etapas incluem:
    - Carregamento e inspeção dos dados.
    - Padronização/normalização das variáveis.
-   - Treinamento dos modelos (Isolation Forest e LOF).
+   - Treinamento dos modelos (Isolation Forest, LOF e Autoencoder com TensorFlow/Keras).
    - Avaliação básica com métricas e gráficos de distribuição de scores/anomalias.
 
 ## Objetivo dos códigos
