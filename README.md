@@ -7,10 +7,10 @@ Este repositório reúne notebooks em Python que exploram técnicas de detecçã
 - `fraud_detection_anomaly.ipynb`: variação do experimento com foco em normalização dos dados, ajustes de hiperparâmetros e avaliação dos efeitos dessas mudanças nos resultados.
 
 ## Pré-requisitos
-- Python 3.9–3.11 com acesso ao Jupyter (via `jupyter notebook` ou VS Code).
+- Python 3.9–3.12 com acesso ao Jupyter (via `jupyter notebook` ou VS Code).
 - Bibliotecas comuns de ciência de dados (numpy, pandas, scikit-learn, matplotlib, seaborn). Caso precise instalar, use versões mínimas sugeridas:
   ```bash
-  pip install -U "numpy>=1.21" "pandas>=1.3" "scikit-learn>=1.0" "matplotlib>=3.5" "seaborn>=0.11"
+  pip install -U "numpy>=1.24" "pandas>=1.5" "scikit-learn>=1.3" "matplotlib>=3.7" "seaborn>=0.12"
   ```
 - Conjunto de dados: [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) em formato CSV.
 
