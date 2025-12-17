@@ -3,14 +3,14 @@
 Este repositório reúne notebooks em Python que exploram técnicas de detecção de anomalias aplicadas ao conjunto de dados público de fraudes em cartões de crédito. O objetivo é comparar abordagens para identificar transações suspeitas de forma não supervisionada.
 
 ## Conteúdo
-- `Isolation_Forest_and_LOF.ipynb`: demonstra Isolation Forest e Local Outlier Factor (LOF) para identificar pontos fora do padrão.
-- `fraud_detection_anomaly.ipynb`: variação do experimento com ajustes de pré-processamento e avaliação.
+- `Isolation_Forest_and_LOF.ipynb`: demonstra Isolation Forest e Local Outlier Factor (LOF) para identificar pontos fora do padrão, incluindo visualização de scores e comparação direta entre os algoritmos.
+- `fraud_detection_anomaly.ipynb`: variação do experimento com foco em normalização dos dados, ajustes de hiperparâmetros e avaliação dos efeitos dessas mudanças nos resultados.
 
 ## Pré-requisitos
-- Python 3.x com acesso ao Jupyter (via `jupyter notebook` ou VS Code). Recomenda-se usar 3.9 ou superior.
-- Bibliotecas comuns de ciência de dados (numpy, pandas, scikit-learn, matplotlib, seaborn). Se precisar instalar ou atualizar, use versões recentes, por exemplo:
+- Python 3.9–3.11 com acesso ao Jupyter (via `jupyter notebook` ou VS Code).
+- Bibliotecas comuns de ciência de dados (numpy, pandas, scikit-learn, matplotlib, seaborn). Caso precise instalar, use versões mínimas sugeridas:
   ```bash
-  pip install -U numpy pandas scikit-learn matplotlib seaborn
+  pip install -U "numpy>=1.21" "pandas>=1.3" "scikit-learn>=1.0" "matplotlib>=3.5" "seaborn>=0.11"
   ```
 - Conjunto de dados: [Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) em formato CSV.
 
