@@ -1,1 +1,4 @@
-# anomaly-detection
+# Notebooks com modelos: 
+- Isolation forest
+- LOF
+- Autoencoder
